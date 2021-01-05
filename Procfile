@@ -1,1 +1,1 @@
-worker: python app.py $PORT
+worker: python weather_bot_heroku.py $PORT

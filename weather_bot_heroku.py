@@ -80,7 +80,8 @@ async def hello_user(message: types.Message):
 async def hello_user(message: types.Message):
     await message.answer('Доступные команды:\n'
                          '/get_weather - выдает температуру воздуха и описание погоды;\n'
-                         '/get_weather_6_days - выдает прогноз на ближайшие 6 дней.')
+                         '/get_weather_6_days - выдает прогноз на ближайшие 6 дней.\n'
+                         'Ввод населенного пункта производится кириллицей')
 
 
 # активация первого состояния
@@ -130,7 +131,8 @@ async def get_answer(message: types.Message, state: FSMContext):
 # отлавливаем любое сообщение не попавшие в обработку
 @dp.message_handler()
 async def echo_message(message: types.Message):
-    await message.answer('Вы не выбрали команду. Я не знаю, что вы хотите')
+    await message.answer('Вы не выбрали команду. Я не знаю, что вы хотите\n'
+                         'Доступные: /help /get_weather /get_weather_6_days')
 
 
 if __name__ == '__main__':

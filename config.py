@@ -1,2 +1,2 @@
-#TOKEN = '1489322128:AAHx2bFX2i4UFw1xjR0l5N9gxEtz4uAODJ8'
-TOKEN = '1404446648:AAFPlI0XXiabNrsk1j82gjjI8n2dlJciISg'
+
+TOKEN = 'твой токен бота'
